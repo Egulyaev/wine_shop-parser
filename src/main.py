@@ -22,7 +22,7 @@ env = Environment(
     loader=FileSystemLoader('.'),
     autoescape=select_autoescape(['html', 'xml'])
 )
-template = env.get_template('index.html')
+template = env.get_template('index1.html')
 rendered_page = template.render(wines=wines)
 
 with open('index.html', 'w', encoding="utf8") as file:
